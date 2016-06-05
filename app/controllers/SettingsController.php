@@ -207,13 +207,6 @@ class SettingsController extends BaseController
         return $this->getConditionEnabled();
     }
 
-   public function getStreamPort()
-   {
-        $instance = explode(',', $this->getPiece("stream.xml", ["mjpg","streamPort"])->__toString());
-        return Response::json($instance);
-   }
-
-
     /*******************************************
     *   Get and set the ios.
     */
