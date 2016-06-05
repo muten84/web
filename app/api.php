@@ -82,8 +82,6 @@ Route::group(array('prefix' => 'api/v1'), function()
         Route::put('condition', 'Controllers\SettingsController@updateConditions');
         Route::get('condition/enabled', 'Controllers\SettingsController@getConditionEnabled');
         Route::put('condition/enabled', 'Controllers\SettingsController@updateConditionEnabled');
-
-	Route::get('streamPort', 'Controllers\SettingsController@getStreamPort');
         
         Route::get('io', 'Controllers\SettingsController@getIos');
         Route::put('io', 'Controllers\SettingsController@updateIos');
